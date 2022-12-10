@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurante</title>
+  <style>
+          body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/vetores-premium/fundo-de-banner-abstrato-branco-e-cinza_28629-2091.jpg?w=2000");
+            height: 400px;
+            width: 100%;
+          }
+
+          .top{
+            position: fixed;
+            width: 100%;
+          }
+
+          header {
+            display:block;
+            font-family: Helvetica, sans-serif;
+            top:0;
+            left:0;
+            height: 90px;
+            width:100%;
+            background:rgb(128, 73, 1); 
+            text-align:center;
+            padding: 20px 1; 
+            background-image: url("https://static.wixstatic.com/media/e361d3_4769bea14fc94f9c896bbfade3a460c8~mv2.jpg/v1/fill/w_1777,h_132,al_c,lg_1,q_80,enc_auto/e361d3_4769bea14fc94f9c896bbfade3a460c8~mv2.jpg");
+          }
+
+          nav ul {
+          list-style-type: none;
+          background-color: black;
+          overflow: hidden;
+          margin: 0%;
+          padding: 0%;
+          }
+
+        nav a {
+          color: #f1f1f1;
+          text-decoration: none;
+          padding: 16px;
+          display: block;
+        }
+
+        nav li {
+          float: right;
+        }
+
+        nav a:hover {
+          background-color: #f1f1f1;
+          color: rgb(12, 12, 12);
+        }
+
+          h1{
+            color: rgb(255, 255, 255);
+            text-decoration: rgb(255, 255, 255);
+          }
+          
+          button {
+            cursor: pointer;
+            font-family: sans-serif; 
+            font-size: 14px; 
+            padding: 10px; 
+            background-color: #000000; 
+            border: none; 
+            color: white; 
+          }
+          
+          button:hover {
+            background-color: #999; 
+          }
+
+        * {
+          margin: 0;
+          font-family: sans-serif;
+        }
+          
+        .main-div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .orp{
+          width: 1300px;
+          height: 500px;
+          margin-left: 6%;
+          background-image: url("https://static.wixstatic.com/media/e361d3_0fb639943ecf4a499a6bbdcd10a1ec86~mv2.jpg/v1/fill/w_1371,h_575,al_c,q_85,enc_auto/e361d3_0fb639943ecf4a499a6bbdcd10a1ec86~mv2.jpg");
+        }
+
+        .section2 {
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+          float: center;
+          padding-left: 40%;
+        }
+
+        .h2{
+          background-color:  rgb(255 98 0);
+          height: 170px;
+          width: 300px;
+          margin-left: 500px;
+          font-size: 50px;
+          margin-bottom: 100px;
+          color:#f1f1f1;
+          font:bold;
+        }
+
+        .cardrapio{
+          background-color:  rgb(255 98 0);
+          width: 700px;
+          height: 450px;
+          margin-left: 400px;
+        }
+
+        .h3{
+          font-size: 20px;
+          text-align: center;
+          color: #f1f1f1;
+        }
+
+        table{
+          background-color: rgb(255 98 0);
+        }
+
+        .fre{
+          color: #f1f1f1;
+          font-size: 80px;
+        }
+
+        .gaw{
+          width: 600px;
+          height: 600px;
+          margin: 0%;
+        }
+
+        .rte{
+          color: #f1f1f1;
+          height: 200px;
+        }
+
+        .ter{
+          height: 100px;
+          width: 100px;
+          margin-left: 290px;
+        }
+
+        .vuj{
+          margin-left: 650px;
+        }
+
+
+        .menu-button {
+          background-color: #FFA07A;
+          color: white;
+          font-size: 30px;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+          border-radius: 10px;
+          margin-left: 35%;
+        }
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+          margin: 10px;
+          padding: 10px;
+          font-size: 16px;
+          width: 300px;
+          border-radius: 10px;
+        }
+        .contact-form input[type="submit"] {
+          background-color: #FFA07A;
+          color: white;
+          font-size: 18px;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+          border-radius: 10px;
+        }
+  </style>
+  <script>
+    var formElement = document.querySelector(".contact-form");
+
+    var submitButton = formElement.querySelector("input[type=submit]");
+    submitButton.addEventListener("click", function() {
+    
+      var pElement = document.createElement("p");
+    
+      pElement.innerText = "Enviado!";
+    
+      pElement.style.color = "red";
+    
+      formElement.appendChild(pElement);
+    });
+    </script>
+</head>
+<body>
+    <div class="top">
+        <header>
+            <br>
+              <h1 id="tytolu">Pimentas Restaurante</h1>
+            <br><br>
+        </header>
+        <nav>
+          <ul>
+            <li><button><a href="/inicio">Contato</a></button></li>
+            <li><button><a href="/inicio">Quem Somos</a></button></li>
+            <li><button> <a href="/">Cardapio</a></button></li>
+            <li><button><a href="/inicio">Inicio</a></button></li>
+          </ul>
+        </nav>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div class="orp">
+      <dic class="section2">
+        <br><br><br><br><br><br><br><br><br>
+        <h2 class="h2">TRADIÇÃO <br> EM SERVIR <br>BEM</h2>
+      </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="cardrapio">
+      <img src="logo.png"  class="ter" alt="">
+      <h2 class="h3">Venha experimentar nossa deliciosa comida caseira preparada com ingredientes frescos e locais.<br> Nosso menu oferece uma grande variedade de opções<br> incluindo pratos tradicionais da culinária regional, bem como opções vegetarianas e veganas. <br>Não deixe de experimentar nosso prato mais popular, o bife ao molho madeira, servido com batatas assadas e legumes grelhados.<br> Faça seu pedido agora e venha se deliciar conosco!<br> clique no botão abaixo para acessá-lo</h2>
+      <br>
+      <a href="/"><button class="menu-button">Ver cardápio</button></a>
+    </div>
+    <br><br><br><br><br><br>
+    <table>
+      <tr>
+    <div class="org">
+      <td><img class="gaw" src="https://static.wixstatic.com/media/e361d3_fcf4da3b552d4f65a5addd3dedf834c0~mv2.jpg/v1/fill/w_673,h_600,al_c,q_85,enc_auto/e361d3_fcf4da3b552d4f65a5addd3dedf834c0~mv2.jpg" alt=""></td>
+    <div class="section">
+      <td><p class="about-us">
+        <h2 class="fre">Quem Somos</h2><br><br><br><br>
+        <h3 class="rte">Somos um restaurante local que oferece comida deliciosa feita com ingredientes frescos e de alta qualidade. Nossa equipe é dedicada a fornecer aos nossos clientes uma experiência culinária única e memorável. Venha nos visitar e experimente a diferença!</h3>
+      </p></td>
+    </div>
+    </div>
+    </tr>
+    </table>
+    <br><br><br><br><br><br>
+    <div class="contact-section">
+      <h2 class="vuj">Fale Conosco</h2>
+      <form class="contact-form" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mensagem" placeholder="Sua opinião sobre o restaurante" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+    </div>
+    </body>
+    </html>
